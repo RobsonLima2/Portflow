@@ -28,6 +28,7 @@ header{
     width: 74%;     
 } 
 
+
 .menuMobile img{     
     width: 30%;   
 } 
@@ -70,14 +71,12 @@ li{
     color:#000000;
     cursor:pointer;
 }
-
 /********************************************************inicio responsivo header*******************************************************/
 @media (max-width:600px){
 
-    header{       
-        height:8.5vh;
-        width:100%;
-        
+    header{
+         padding: 0;
+         width: 90vh;        
     }
  
     .menuMobile{     
@@ -86,27 +85,40 @@ li{
     } 
     
     .menuMobile img{     
-        width: 18%; 
-          
-    }    
+        width: 25%;         
+    }
+    
+    .containerMenu p{
+        margin-left: 20% ;
+ 
+     }
 
     .boxNav{
         display: none;
         flex-direction: column;
+        
     }
 
-    .containerMenu p{
-       margin-left: 20% ;
-
+    figure {
+        width: 5vw;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+       
+        
     }
+
+   
  
 }
 
 /********************************************************final responsivo Header*******************************************************/
 
-/********************************************************final header******************************************************************/
+/********************************************************final header****************************************************************/
 
-/************************************************************inicio main***************************************************************/
+/************************************************************inicio main****************************************************************/
 
 .laranjaAzul{
     width: 100%;
@@ -131,7 +143,7 @@ li{
 }
 
 
-.mainBtn{
+.main_btn{
     text-align: initial;
     font-size: 1.5em;
     margin-top: 5vh;
@@ -152,17 +164,8 @@ li{
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    margin-left: 25%;
+    margin-left: 10%;
     margin-top: 4%;
-}
-
-figure {
-    width: 5vw;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center; 
     
 }
 
@@ -181,10 +184,13 @@ figure {
 
 /********************************************************inicio responsivo main*******************************************************/
 @media(max-width:600px){
+   
 
-    .laranjaAzul{           
-        background-position: 100%; 
-        height: 89vh;          
+    .laranjaAzul{ 
+        width: auto;        
+        background-position: 90%; 
+        height: 89vh; 
+           
         
     }   
     
@@ -192,43 +198,91 @@ figure {
         width: auto;       
         display: flex;
         align-items: center;
-        font-size: 50px;
+        font-size: 58px;
         font-weight: 900; 
         position: relative;               
         top: 25%;
-        right: 60vh; 
-        margin-right: 300px;
+        left: 20vh; 
+        margin-right: 35vw;
+        
     }   
     
-    .mainBtn{
-        width: 40vw;
-        top: 580px;
-        right: 50vh; 
-        margin-right: 300px;    
+    .main_btn{
+        width: 35vw;
+        top: 590px;
+        left: 20vh; 
+        margin-right: 35vw;    
         
     }
 
     .photos {
+        display: flex;
        width: 50%;
        margin-left: 25%;
        margin-right: 190%;
-       
     }   
 
     .photos img {       
-        width: 200px;
-        margin-left: 15%;
+        width: 200px;        
                
     }
 
-    
+    .photoMateriais {
+       border: solid red;
+       order: 1;
+   }
+
+   .photoMesa{
+       order: 2;
+   }
+
+   .photoMuance{
+       order: 3;
+   }
+
+   .photoAll{
+       order: 4;
+   }
+
+   .photoCart{
+       order: 5;
+   }
+
+   .photoTelas{
+       order: 6;
+   }
+
+   .photoCaneca{
+       order: 7;
+   }
+
+   .photoPao{
+    order: 8;
+}
+
+.photoCel{
+    order: 9;
+}
+
+.photoErva{
+    order: 10;
+}
+
+.photoBarra{
+    order: 11;
+}
+
+.photoTablet{
+    order: 12;
+}
+ 
+  
 }
 
 /********************************************************final responsivo main*******************************************************/
-
 /********************************************************final main******************************************************************/
+/********************************************************inicio footer******************************************************************/
 
-/************************************************************inicio footer***************************************************************/
 footer{
     width: 78%;
     height: 12vh;
@@ -261,60 +315,74 @@ button{
     font-size: 10px;
     color:#707070;
 }
+
+/********************************************************inicio responsivo footer*******************************************************/
 @media (max-width:600px) {
     footer{
         width: 88%;
         height: 18vh; 
         display: flex;
-        flex-direction: column;
-       
+        flex-direction: column;       
         justify-content: space-between;
     }
+
     .redesSociais{
-        width: 57%;
+        width: 38%;
         display: flex;
         justify-content: space-evenly;
-        background-color: #7FDBD4;
+        background-color: #7FDBD4;        
+        margin-right: 60%;
+        margin-top: 5%;
+        margin-bottom: 5%;
         
-        margin-right: 43%;
     }
+
     .redesSociais img{
         width: 18px;
     }
+
     .footerCopy{
         width: 100%;
         display: flex;
-        flex-direction: column;
+        flex-direction: column;             
+        margin-bottom: 10%;
+        margin-left:1%;
        
     }
+
     .CopyText{
         font-size: 11px;
-        font-weight: bold;
-        
+        font-weight: bold;        
     }
+
     .layout{
-        font-size: 9px;
-        color:#707070;
-       
-        
+        width: 20vh;
+        font-size: 8px;
+        color:#707070; 
+         
     }
+
     button{
         display: initial;        
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 20%;
-        height: 65%;       
+        width: 6%;
+        height: 11%;       
         background-color: gray;
         position: relative;
-        left: 60%;
-        bottom: 60%;
+        right: 15%;
+        bottom: 65%;
         border:none;
+       
     }
 
     footer a{
         color:#ccccccd0;
         text-decoration: none;
+       
+        
       }
 
 }
+/********************************************************final responsivo footer*******************************************************/
