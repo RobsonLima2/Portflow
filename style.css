@@ -148,7 +148,7 @@ li{
     font-size: 1.5em;
     margin-top: 5vh;
     position: absolute;
-    top: 320px; 
+    top: 520px; 
     left: 8%;  
     width: 40vw;
     height: 40px;   
@@ -210,8 +210,8 @@ li{
     
     .main_btn{
         width: 35vw;
-        top: 370px;
-        left: 28vh; 
+        top: 550px;
+        left: 26svh; 
         margin-right: 35vw;    
         
     }
@@ -348,20 +348,22 @@ button{
 /********************************************************inicio responsivo footer*******************************************************/
 @media (max-width:600px) {
     footer{
-        width: 88%;
+        width: 34%;
         height: 20vh; 
         display: flex;
         flex-direction: column;       
         justify-content: space-between;
         background-color: transparent;
+        margin-left: 25.5%;
+       
     }
 
     .redesSociais{
-        width: 38%;
+        width: 97%;
         display: flex;
         justify-content: space-evenly;
         background-color: #7FDBD4;        
-        margin-right: 27%;
+        margin-right: 77%;
         margin-top: 5%;
         margin-bottom: 5%;
         
@@ -372,47 +374,50 @@ button{
     }
 
     .footerCopy{
-        width: 45%;            
+        width: 100%;            
         display: flex;
         flex-direction: column;             
         align-items: flex-start;
-        margin-right: 17%;
-  
+        margin-left: 1%;
+       
        
     }
 
     .CopyText{
         font-size: 11px;
-        font-weight: bold;   
-            
+        font-weight: bold; 
+        margin-right: 10vh;  
+       
     }
 
-    /* .layout{
-        width: 150vh;
+    .layout{
+        width: 10vh;
         display: flex;
-        flex-direction: column;       
-       
-    } */
-/* 
+        flex-direction: column; 
+             
+        margin-right: 60vh;  
+    }
+
     .layout p{
-        border: solid red;
-        width: 40vw;
+       
+        width: 30vw;
         height:60vh ;
         margin-bottom: 500vh;
-    } */
+    }
 
     button{
         display: initial;        
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 8%;
+        width: 18%;
         height: 18%;       
         background-color: black;
         position: relative;
-        left: 10%;
+        left: 40%;
         bottom: 45%;
         border:none;
+       
         
        
     }
